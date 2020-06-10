@@ -58,7 +58,7 @@ function encrypt({ key, plainText }) {
 
   let pairs = createPairs(plainText);
   let mappedPairs = [];
-  for (let i = 0; i <= 5; i++) {
+  for (let i = 0; i < pairs.length; i++) {
     mappedPairs.push(mapPairs(pairs[i]));
   }
 
